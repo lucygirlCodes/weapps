@@ -1,0 +1,64 @@
+/* page/address/addressList.wxss */
+page{
+    background: #eeeeee;
+}
+.container{
+    background: #fff;
+    margin-bottom:10px;
+}
+.list-name-phone{
+    width: 700rpx;
+    margin: 0 auto;
+    font-size:16px;
+    padding:20rpx 0 10rpx;
+}
+.address{
+    width: 700rpx;
+    height:76rpx;
+    display: flex;
+    flex-direction: row;
+    margin:0 auto;
+    padding:10px 0;
+}
+.acquiesce-add{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size:14px;
+}
+
+.list-add{
+    border-bottom: 1px solid #eeeeee;
+    width: 700rpx;
+    margin: 0 auto;
+    font-size:12px;
+    padding:10rpx 0 20rpx;
+    color:#747474;
+}
+.img{
+    width: 38rpx;
+    height:38rpx;
+}
+.img-bianji,.img-delete{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    color:#747474;
+}
+.right{
+    position: absolute;
+    right:25rpx;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.btn{
+  width: 750rpx;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  content: none;
+  background: #09bb07;
+  color: #fff;
+}

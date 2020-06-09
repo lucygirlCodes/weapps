@@ -1,0 +1,57 @@
+/* page/address/edit.wxss */
+page{
+    background: #fff;
+}
+.writeInfo{
+    border-bottom: 12px solid #eeeeee;
+}
+.info{
+    width: 700rpx;
+    display: flex;
+    height:106rpx;
+    line-height: 106rpx;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 auto 0;
+    border-bottom: 1px solid #eeeeee;
+
+}
+.info1{
+    width: 700rpx;
+    display: flex;
+    line-height: 106rpx;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size: 14px;
+    margin: 0 auto 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.info text,.info1 text{
+    width: 170rpx;
+    height:85rpx;
+    font-size: 14px;
+}
+.info input{
+    width: 400rpx;
+    height:80rpx;
+    padding-left: 10px;
+    padding-top:27rpx;
+}
+.setAdd{
+    width: 700rpx;
+    margin:10px auto;
+    font-size:14px;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle; 
+}
+.btn{
+  width: 750rpx;
+  border-radius: 0;
+  position: fixed;
+  bottom: 0;
+  content: none;
+  background: #09bb07;
+  color: #fff;
+}

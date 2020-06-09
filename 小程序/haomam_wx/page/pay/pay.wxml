@@ -1,0 +1,68 @@
+<view class="container">
+    <view class="add-img" bindtap="goChooseAddress">
+        <view style="margin-left:10rpx;"><image style="width:20px;height:20px;margin-top:40rpx;" src="/resources/dingwei.png"></image></view>
+        <view wx:if="{{!ADDRESS}}" style="margin:40rpx 0 0 20rpx;">选中地址</view>
+        <view class="add-name" wx:if="{{ADDRESS}}">
+            <view style="font-size:16px;">{{ADDRESS.CONSIGNEE}} {{ADDRESS.MOBILE}}</view>
+            <view style="width:600rpx;color:#747474;">
+                {{ADDRESS.REGION_PROVINCE}}
+                {{ADDRESS.REGION_COUNTRY}}
+                {{ADDRESS.REGION_CITY}}
+                {{ADDRESS.ADDRESS}}
+            </view>
+        </view>
+        <view>
+            <image src="/resources/big.png" style="width:20px;height:20px;position:absolute;right:40rpx;top:40rpx;"></image>
+        </view>
+    </view>
+</view>
+
+
+
+<view wx:for="{{BRAND_ARR}}" wx:for-item="brand_cart" wx:for-index="idx" class="goods"  bindtap="bindViewTap">
+
+    <view class="my-sel" >
+        <view class="goods-img"><image src="/resources/house.png"></image></view>
+        <text>{{brand_cart.brand}}</text>
+    </view>
+    <!--订单商品详情 start-->
+    <view class="my-list bordernone" wx:for="{{BRAND_CART[brand_cart.brand]}}" wx:for-item="cartItem" >
+        <image src="{{cartItem.GOODS_IMG_URL}}" class="my-pic" mode="aspectFill"></image>
+        <view class="my-left">
+            <view class="my-title">{{cartItem.GOODS_NAME}}</view>
+            <view class="detail-num">
+                <text class="my-txt">颜色：{{cartItem.GOODS_COLOR}} 尺码：{{cartItem.GOODS_SIZE}}</text>
+                <text class="my-num">x{{cartItem.GOODS_NUM}}</text>
+            </view>
+            
+        </view>
+        <view class="my-right">
+            <icon class="iconfont del"/>
+            <text class="gay">￥{{cartItem.GOODS_PRICE}}</text>
+        </view>
+    </view>
+    <!--订单商品详情 end-->
+</view>
+
+<view class="pay-box">
+    <view class="pay" style="padding-top:10px;">
+        <text class="name">订单金额</text>
+        <text class="num">￥{{TOTAL_PRICE}}</text>
+    </view>
+    <view class="pay">
+        <text class="name">配送费</text>
+        <text class="num">￥{{EXPRESS_CHARGES}}</text>
+    </view>
+    <view class="pay">
+        <text class="name">手机折扣</text>
+        <text class="num">{{ORDER_DISCOUNT_REMARK}}</text>
+    </view>
+    <view class="pay" style="padding-bottom:10px;">
+        <text class="name">需支付</text>
+        <text class="num">￥{{NEED_PAY_PRICE}}</text>
+    </view>
+</view>
+<!--底部-->
+<view class="float">
+    <button style="background:#000;color:#fff;" size="default" bindtap="goPay"> 去支付 </button>
+</view>

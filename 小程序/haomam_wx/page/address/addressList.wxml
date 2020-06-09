@@ -1,0 +1,30 @@
+<view class="container" wx:for="{{ADDRESS_LIST}}" bindtap="chooseAddressToOrder" wx:for-item="item"  data-index="{{index}}">
+    <view class="list-name-phone">
+        <text>{{item.CONSIGNEE}} </text>
+        <text> {{item.MOBILE}}</text>
+    </view>
+    <view class="list-add">
+        <text>{{item.REGION_PROVINCE}}{{item.REGION_CITY}}{{item.REGION_COUNTRY}}{{item.ADDRESS}}</text>   
+    </view>
+    <view class="address">
+        <view class="acquiesce-add" hidden="{{item.IS_DEFAULT==1 ? false : true}}">
+            <icon size="18" type="success_circle"></icon>
+            <text style="margin-left:5px;">默认地址</text>
+        </view>
+        <view class="right">
+            <view catchtap="reviseAdd" data-index="{{index}}" class="img-bianji" data-item="{{item.DELIVERY_ADDRESS_ID}}">
+                <image class="img bianji" src="/resources/bianji.png"></image>
+                <text class="">编辑</text>
+            </view>
+            <view catchtap="del" class="img-delete" data-item="{{item.DELIVERY_ADDRESS_ID}}">
+                <image style="margin-left:10px;" class="img delete" src="/resources/delete.png"></image>
+                <text class="">删除</text>
+            </view>
+        </view>
+        <!-- DELIVERY_ADDRESS_ID -->
+    </view>    
+</view>
+
+<button class="btn" bindtap="addAddress"> 新增地址 </button>
+    
+

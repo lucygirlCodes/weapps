@@ -1,0 +1,45 @@
+<!--page/me/me.wxml-->
+<view class="header">
+    <navigator wx:if="{{noLogin}}" url="/page/login/login" hover-class="none">
+        <image class="imgs" src="{{imgSrc}}"></image>
+        <text style="padding:5px 0;display:block;color:#323232;">立即登录</text>
+    </navigator>
+    <view class="title" wx:if="{{!noLogin}}">
+        <image class="userTitle" src="{{wx_userInfo.avatarUrl}}"></image>
+        <text style="padding:5px 0;display:block;color:#323232;">{{wx_userInfo.nickName}}</text>
+    </view>
+</view>
+
+<navigator style="width:750rpx;" url="../myOrder/myOrder">
+    <view class="list" style="margin-top:10px;height:90rpx;">
+        <text class="mes_list">我的订单</text>
+    </view>
+</navigator>
+
+<navigator url="/page/address/addressList">
+    <view class="list">
+            <text class="mes_list">地址管理</text>  
+        <image class="go" src="/resources/big.png"></image>
+    </view>
+</navigator>
+
+<navigator url="/page/address/addressList">
+    <view class="list">
+        <text class="mes_list">消息中心</text>
+        <image class="go" src="/resources/big.png"></image>
+    </view>
+</navigator>
+
+<navigator url="/page/address/addressList">
+    <view class="list">
+        <text class="mes_list">我的会员</text>
+        <image class="go" src="/resources/big.png"></image>
+    </view>
+</navigator>
+
+<navigator url="/page/address/addressList">
+<view class="list">
+    <text class="mes_list">更多</text>
+    <image class="go" src="/resources/big.png"></image>
+</view>
+</navigator>

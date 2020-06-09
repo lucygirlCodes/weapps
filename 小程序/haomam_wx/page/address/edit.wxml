@@ -1,0 +1,28 @@
+<!--page/address/edit.wxml-->
+<view class="container">
+    <view class="writeInfo">
+        <view class="info" style="">
+            <text>收款人</text>
+            <input type="text" bindinput="getName" placeholder="请输入收货人姓名" value="{{CONSIGNEE}}" />
+        </view>
+        <view class="info">
+            <text>手机号码</text>
+            <input type="number" maxlength="11" bindinput="getPhone" placeholder="请输入收货人手机号码" value="{{MOBILE}}"/>
+        </view>
+        <view class="info">
+            <text>收货地址</text>
+            <input bindblur="bingAddressBlur" bindfocus="bingAddressTap" value="{{ADDRESS_1_STR}}" placeholder="小区/大厦/学校"/>
+        </view>
+        <view class="info1">
+            <text>详细地址</text>
+            <textarea style="padding:36rpx 0 36rpx 40rpx;" auto-height="true" placeholder="详细地址（如门牌号等）" bindinput="getDateilAdd" value="{{ADDRESS}}"/>
+        </view>
+    </view>
+    <view class="setAdd" catchtap="clickIcon">
+        <icon size="18" style="margin-right:10px;" type="{{selected?'success_circle':'circle'}}"></icon>
+        <text>设置为默认地址</text>
+    </view>
+    <view>
+        <button class="btn" bindtap="{{goNewAdd}}">确认</button>
+    </view>
+</view>

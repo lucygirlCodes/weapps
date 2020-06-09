@@ -1,0 +1,55 @@
+
+<scroll-view>
+    <view wx:for="{{BRAND_ARR}}" wx:for-item="brand_cart" wx:for-index="idx" class="carts-item">
+        <!-- 全选 -->
+        <view class="my-sel" >
+            <icon data-brand="{{brand_cart.brand}}" bindtap="bindSelectAll" type="{{brand_cart.selected?'success_circle':'circle'}}" data-index="{{idx}}" size="20" class="l-mycheck"/>
+            <text style="margin-left:5px;">{{brand_cart.brand}}</text>
+        </view>
+        <!--end-->
+
+        <view class="my-list bordernone" wx:for="{{BRAND_CART[brand_cart.brand]}}" wx:for-item="cartItem">
+
+            <icon style="padding:40rpx 20rpx 40rpx 0;" data-brand="{{brand_cart.brand}}"  type="{{cartItem.selected?'success_circle':'circle'}}" size="20" bindtap="bindCheckbox" data-index="{{index}}" class="my-check"/>
+            <image src="{{cartItem.GOODS_IMG_URL}}" class="my-pic" mode="aspectFill"></image>
+            <view class="my-left">
+                <view class="my-title">{{cartItem.GOODS_NAME}}</view>
+                <text class="my-txt">颜色：{{cartItem.GOODS_COLOR}} 尺码：{{cartItem.GOODS_SIZE}}</text>
+                <view class="my-bnt">
+                    <!-- 减号 -->
+                    <text class="bnt" data-brand="{{brand_cart.brand}}" data-index="{{index}}" data-item="{{cartItem}}" bindtap="bindMinus">-</text>
+                    <!-- 数值 -->
+                    <input type="number" disabled="true" bindchange="bindManual" class="int" value="{{cartItem.GOODS_NUM}}" />
+                    <!-- 加号 -->
+                    <text class="normal bnt" data-brand="{{brand_cart.brand}}" data-index="{{index}}" data-item="{{cartItem}}" bindtap="bindPlus">+</text>
+                    <view class="img-delete" catchtap="delCarsGoods" data-brand="{{brand_cart.brand}}" data-del="{{cartItem.GOODS_ID}}">
+                        <image class="del" src="/resources/delete.png"></image>
+                        <text>删除</text>
+                    </view>
+                    
+                </view>
+            </view>
+            <view class="my-right">
+                <text class="gay">￥{{cartItem.GOODS_PRICE}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!--底部-->
+    <view class="float" hidden="{{BRAND_CART=='' ? true : false}}">
+        <view class="my-rightbox">
+            <view class="my-count" data='{{sep}}'>
+                您需要支付：<text style="color:red">￥{{TOTAL_PRICE}}</text>
+            </view>
+            <view class="my-bnts" bindtap="setPayment" >
+                立即购买
+            </view>
+        </view>
+    </view>
+    <view class="bai"></view>
+</scroll-view>
+
+<view hidden="{{BRAND_CART=='' ? false : true}}" style="width:750rpx;height:100%;">
+    <text class="car">购物车空空如也</text>
+    <button size="mini" bindtap="goGoodsDetail" class="goGoodsDetail">去添加商品</button>
+</view>

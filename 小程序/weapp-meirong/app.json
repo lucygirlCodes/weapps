@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",     
+    "pages/technicain/technicain",
+    "pages/user/user",
+    "pages/book/book",
+    "pages/logs/logs"    
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#8e2323",
+    "navigationBarTitleText": "美容管理中心",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "backgroundColor":"#8e2323",
+    "position":"bottom",
+    "list": [
+     {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index_icon.png",
+      "selectedIconPath": "images/index_icon_HL.png"
+    },
+    {
+      "pagePath": "pages/technicain/technicain",
+      "text": "技师",
+      "iconPath": "images/skill_icon.png",
+      "selectedIconPath": "images/skill_icon_HL.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/user_icon.png",
+      "selectedIconPath": "images/user_icon_HL.png"
+    }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

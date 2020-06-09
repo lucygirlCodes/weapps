@@ -1,0 +1,78 @@
+/* page/myOrder/myOrder.wxss */
+page{width: 100%;}
+ .swiper-tab{width: 100%; border-bottom: 2rpx solid #d6d6d6; text-align: center;  line-height: 80rpx;}  
+.swiper-tab-list{  font-size: 30rpx;  display: inline-block;  width: 25%;  color: #d6d6d6; }  
+.on{ color: #3f3f3f;font-weight: bold;border-bottom: 5rpx solid #000;}  
+.swiper-box{ display: block; width: 100%; overflow: scroll; background: #eeeeee;font-size:28rpx;}  
+.swiper-box view{ background: #fff;  }
+.header{width: 100%;height:70rpx;line-height: 70rpx;border-bottom:2.34rpx solid #d6d6d6;margin-top:35rpx;}
+swiper-item{
+    overflow: scroll;
+}
+.line{border-bottom:2px solid #000;}
+.detail{margin-left:30rpx;}
+.anarchy{position: absolute;right:30rpx;}
+.goods-num{float:left}
+.goods-name{width: 550rpx;float:left;padding-left:20rpx;}
+.cont{margin-top:30rpx;}
+.right{position: absolute;right: 40rpx;}
+.section{width:750rpx;height:245rpx; border-bottom: 1rpx solid #d6d6d6;}
+.num{text-align:right;font-size:13px;padding:8px 0;border-bottom: 1px solid #dcdcdc}
+.section image{width: 140rpx; height:180rpx; margin:35rpx 0 0 35rpx;}
+.footer{position: relative;height:100rpx;}
+button{ 
+    display:inline-block; 
+    width: 200rpx;
+    /*height:80rpx;*/
+    font-size:24rpx;
+    background: #fff;
+}
+.btn2{
+    position: absolute;
+    right:40rpx;
+    top:20rpx; 
+}
+.btn1{
+    position: absolute;
+    right:260rpx;
+    top:20rpx; 
+}
+.stt{
+    width:750rpx;
+    height:700rpx;
+    background:#fff;
+    font-size:14px;
+}
+.picker,.pic{
+    width: 700rpx;
+    margin:40rpx auto 0;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.choose{
+    display:block;
+    width:500rpx;
+    height:50rpx;
+    border:1px solid #e7e7e7;
+    padding-left:30rpx;
+}
+.txt{
+    display:block;
+    width:500rpx;
+    border:1px solid #e7e7e7;
+    padding:5rpx 0;
+}
+.btn{
+    display: block;
+    position: fixed;
+    bottom: 20rpx;
+    height:80rpx;
+    width:700rpx;
+    margin-left:25rpx;
+    background:#000;
+    color:#fff;
+    font-weight: bold;
+    line-height: 84rpx;
+    font-size: 14px;
+}

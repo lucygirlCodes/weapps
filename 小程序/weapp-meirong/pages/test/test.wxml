@@ -1,0 +1,27 @@
+<!--pages/test/test.wxml-->
+<!-- 数据绑定-->
+<text>{{msg}}</text>
+<text>........................</text>
+<!-- 列表渲染-->
+<block wx:for="{{array}}">
+   <view>{{item}}</view>
+</block>
+<!-- 条件渲染-->
+<block wx:if="{{false}}">
+  <view> view1 </view>
+  <view> view2 </view>
+</block>
+<view>............</view>
+
+<view>{{dx.name}}</view>
+<view>{{dx.song}}</view>
+<view>{{dx.address}}</view>
+
+<view>............</view>
+<!-- 数组对象渲染-->
+<block wx:for="{{ObArray}}">
+   <text>{{item.name}}</text>..
+     <text>{{item.song}}</text>..
+      <text>{{item.address}}</text>.
+</block>
+

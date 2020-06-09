@@ -1,0 +1,38 @@
+/* page/find/shopInfo.wxss */
+
+.title,.activities,.time{
+    font-size:14px;
+}
+.title{
+    border-top:5px dashed red;
+}
+.activities,.time{
+    border-top:5px solid #eeeeee;
+}
+.title image{
+    width: 40rpx;
+    height:46rpx;
+    margin:8px 10px 0 10px;
+}
+.activities image{
+    width: 35rpx;
+    height: 35rpx;
+    margin:8px 10px 0 10px;
+}
+.time image{
+    width: 40rpx;
+    height: 40rpx;
+    margin:8px 10px 0 10px;
+}
+.img-name{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    height:70rpx;
+    line-height: 70rpx;
+}
+.add_phone{
+    display: flex;
+    flex-direction: column;
+    padding-left:40px;
+}

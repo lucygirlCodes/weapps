@@ -1,0 +1,11 @@
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}"> 
+    <block wx:for="{{indexBanner}}" wx:key="item">  
+        <swiper-item>  
+           <navigator url="/" hover-class="navigator-hover">  
+            <image src="{{item.PICTURE_URL}}" class="wx-swiper-item"/>  
+            <text>sdaf</text>>
+           </navigator>   
+        </swiper-item>  
+      </block>  
+</swiper>

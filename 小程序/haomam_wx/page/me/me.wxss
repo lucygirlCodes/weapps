@@ -1,0 +1,43 @@
+/* page/me/me.wxss */
+page{
+    background: #eeeeee;
+}
+view{
+    background: #fff;
+}
+.header{
+    font-size:14px;
+    text-align: center;
+}
+.imgs{
+    width:750rpx;
+    height:280rpx;
+}
+.userTitle{
+  width: 80rpx;
+  height:80rpx;
+  background: 100%;
+  border-radius: 50%;
+  margin-top:40rpx;
+}
+.list{
+    width: 750rpx;
+    height:90rpx;
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    
+    vertical-align: middle;
+      
+}
+.go{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: 10rpx;
+    margin-top:25rpx;
+}
+.mes_list{
+    display:block;
+    margin:25rpx 0 0 20rpx;
+}

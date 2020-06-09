@@ -1,0 +1,19 @@
+<!--page/find/shopList.wxml-->
+<view class="city" bindtap="GPS">
+    <image style="width:44rpx;height:44rpx;" src="/resources/GPS.png"></image>
+    <text>GPS位置</text>
+</view>
+<view class="city">
+    <image src="/resources/house.png"></image>
+    <text>附近门店</text>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <text style="position:absolute;right:20rpx;color:#747474;">切换城市</text>
+    </picker>    
+</view>
+<view wx:for="{{shopList}}" wx:for-item="item" wx:key="item" class="shopList">
+    <navigator url="./shopInfo?STORE_INFO_ID={{item.STORE_INFO_ID}}">
+        <image src="{{item.STORE_IMG_URL}}"></image>
+        <text style="width:270rpx;display:block;margin:0 auto;">{{item.STORE_NAME}}</text>
+    </navigator>
+</view>
+

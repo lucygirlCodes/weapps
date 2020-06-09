@@ -1,0 +1,14 @@
+<view class="page badge js_show">
+    <view class="page__bd">
+        <navigator url="../find/shopList">
+            <view class="weui-cell weui-cell_access md">
+                <view class="weui-cell__bd">附近门店</view>
+            </view>
+        </navigator>
+        <navigator url="../find/codeCart">
+            <view class="weui-cell weui-cell_access sm">
+                <view class="weui-cell__bd">扫码购</view>
+            </view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+.lb{
+  width:100%;
+  height:300rpx;
+}
+
+.lb  .lb_img{
+  width:100%;
+
+}
+
+.myevent image{
+position: relative;
+top:100rpx;
+left:200rpx;
+ width:80rpx;
+ height:80rpx;
+}

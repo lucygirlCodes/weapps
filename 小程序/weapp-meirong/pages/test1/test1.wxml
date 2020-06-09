@@ -1,0 +1,11 @@
+  <swiper class="lb" indicator-dots="true"
+        autoplay="true" interval="1000" duration="200">
+        <block wx:for="{{ picArray}}" wx:key="*this">
+          <swiper-item>
+             <image class="lb_img" src="{{item}}"> </image>
+          </swiper-item>
+        </block>
+    </swiper>
+ <view class="myevent">
+    <image bindtap="gotoOther" src="/images/time.png"></image>
+ </view>

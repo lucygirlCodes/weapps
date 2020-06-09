@@ -1,0 +1,175 @@
+page{
+    background: #eeeeee;
+}
+swiper{
+    width: 750rpx;
+    height:750rpx;
+}
+.post-price-distribution-sale{
+    background: #fff;
+    font-size:28rpx;
+}
+.post-price,.post-distribution,.post-sale{
+    display: inline-block;
+    padding:20rpx 30rpx;
+}
+.post-sale{
+    position: absolute;
+    right: 10rpx;
+}
+.goodsDetail{
+    margin-top:10rpx;
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 24rpx;
+    color:#bbbbbb;
+    background: #fff;
+}
+.content{
+    width: 700rpx;
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+    margin: 0 auto;
+    padding: 10rpx 0 10rpx 30rpx;
+}
+
+.goodsImg{
+    width: 750rpx;
+    height:750rpx;
+    
+}
+image{
+    width: 750rpx;
+    height:750rpx;
+    
+}
+.footer{
+    width: 750rpx;
+    height: 90rpx;
+    position: fixed;
+    bottom: 0;
+    background: #000;
+    display: flex;
+    flex-direction: row;
+}
+.f-left{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    
+}
+.f-left image{
+    width: 50rpx;
+    height:50rpx;
+    margin: 20rpx 0 0 40rpx;  
+}
+.f-left text{
+    color:#e6e6e6;
+    font-size: 18px;
+    margin: 25rpx 0 0 10rpx;
+}
+.btn{
+    color:#fff;
+    background: red;
+    width: 200rpx;
+    height:72rpx;
+    border-radius: 0;
+    line-height: 72rpx;
+    padding:0;
+    margin-top:0;
+    position: fixed;
+    bottom: 10rpx;
+    right:20rpx;
+}
+
+/**/
+
+.content1{
+    width: 100%;
+    height:105px;
+    border-bottom: 2px solid #f6f6f6;
+}
+.userTitle{
+    width: 65px;
+    height: 80px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.text{
+    margin: 10px 0 0 20px;
+    float: left;
+    font-size: 12px;
+}
+.big_m{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.specifications{
+    width: 95%;
+    margin: 0 auto 110rpx;
+}
+.colorTitle{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.color{
+    border:1px solid #dfdfdf;
+    width: 27%;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+    margin-right:10px;
+    font-size: 12px;
+    display: inline-block;
+}
+.btn1{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0;
+    background: #333333;
+    color:#fff;
+    z-index: 999;
+}
+.num{
+    font-size:12px;
+}
+.int{
+    width: 50rpx;
+    text-align: center;
+    height: 18px;
+}
+input{
+    display:block;
+    height:0;
+    text-overflow:clip;
+    overflow:hidden;
+    white-space:nowrap;
+    font-family:UICTFontTextStyleBody;
+    min-height:0;
+
+}
+.bnt{
+    display: block;
+    width: 34rpx;
+    height:34rpx;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 34rpx;
+}
+.num-bnt{
+    margin:0 0 150rpx 40rpx;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.btnGoods{
+    margin-left:300rpx;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+
+

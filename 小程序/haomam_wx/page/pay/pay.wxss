@@ -1,0 +1,108 @@
+/* page/pay/pay.wxss */
+page{
+    background: #eeeeee;
+}
+.container{
+    background: #fff;
+    width: 750rpx;
+    border-bottom: 6px dashed #ff5f00;
+    font-size:12px;
+}
+.add-img{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    
+}
+
+.my-right{
+    position: absolute;
+    right: 40rpx;
+    margin-top:20rpx;
+    color:red;
+}
+.detail-num{
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+}
+.my-txt,.my-title,.my-num{
+    display: block;
+    margin-top: 10rpx;
+}
+.my-txt,.my-num{
+    color:#c7c7c7;
+}
+.my-num{
+    position: absolute;
+    right: 40rpx;
+}
+.my-title{
+    margin-top:10px;
+    font-size: 14px;
+}
+.my-txt,.my-title{
+    margin-left:5px;
+}
+.my-sel{
+    width: 700rpx;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size: 18px;
+    border-bottom:1px solid #eeeeee; 
+    margin-top:10px;
+}
+.bordernone{
+    width: 700rpx;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size:12px;
+    border-bottom:1px solid #eeeeee;
+}
+.my-pic{
+    width: 85rpx;
+    height:110rpx;
+}
+.goods{
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    margin-top:10px;
+}
+.goods-img{
+    width: 52rpx;
+    height:68rpx;
+    margin-right:10px;
+}
+.goods-img image{
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+}
+.add{
+    display: flex;
+    flex-direction: column;
+}
+.add-name{
+    margin: 20rpx;
+}
+.pay-box{
+    background: #fff;
+}
+.pay{
+    width: 750rpx;
+    font-size:12px;
+    margin-top:10px;
+}
+.num{
+    position: absolute;
+    right: 40rpx;
+}
+.name{
+    margin-left:20px;
+}

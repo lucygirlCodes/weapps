@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/me/me",
+    "page/address/addressList",
+    "page/find/codeCart",
+    "page/find/shopList",
+    "page/find/index",
+    "page/myOrder/myOrder",
+    "page/myOrder/logistics/logistics",
+    "page/find/shopInfo",
+    "page/goodsList/goodsList",
+    "page/cars/cars",
+    "page/login/login",
+    "page/address/edit",
+    "page/pay/pay",
+    "page/detail/detail"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#eeeeee",
+    "navigationBarTitleText": "MUM-IN-CHIEF",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#8FBC8F",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "page/index/index",
+        "text": "首页",
+        "iconPath": "resources/jingxuan.png",
+        "selectedIconPath": "resources/jingxuan.png"
+      },
+      {
+        "pagePath": "page/goodsList/goodsList",
+        "text": "分类",
+        "iconPath": "resources/shangcheng.png",
+        "selectedIconPath": "resources/shangcheng.png"
+      },
+      {
+        "pagePath": "page/find/index",
+        "text": "三千万",
+        "iconPath": "resources/faxian.png",
+        "selectedIconPath": "resources/gouwuche.png"
+      },
+      {
+        "pagePath": "page/cars/cars",
+        "text": "购物车",
+        "iconPath": "resources/gouwuche.png",
+        "selectedIconPath": "resources/faxian.png"
+      },
+      {
+        "pagePath": "page/me/me",
+        "text": "我的",
+        "iconPath": "resources/me.png",
+        "selectedIconPath": "resources/me.png"
+      }
+    ],
+    "backgroundColor": "#F7F7FA"
+  },
+  "networkTimeout": {
+    "connectSocket": 10000,
+    "request": 10000,
+    "downloadFile": 10000,
+    "uploadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+<!--page/myOrder/logistics/logistics.wxml-->
+<view class="container">
+    <view class="title">
+        <view style="padding-top:30rpx;">
+            <text>物流状态：</text>
+            <text>{{data.WL_STATUS_STR}}</text>
+        </view>
+        <view>
+            <text>承运公司：</text>
+            <text>{{data.WL_NAME}}</text>
+        </view>
+        <view>
+            <text>运单编号：</text>
+            <text>{{data.WL_NO}}</text>
+        </view>
+    </view>
+</view>
+<view class="section" wx:for="{{data.DATA}}" wx:item="item">
+    <view class="detail">
+        <text>{{item.time}}</text>
+        <text>{{item.context}}</text>
+    </view>
+</view>
